@@ -1,0 +1,20 @@
+{
+  "name": "node-ai-labs",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vitest.explorer",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "updateContentCommand": "npm ci",
+  "secrets": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for running the code locally or in Codespaces.",
+      "documentationUrl": "https://platform.openai.com/api-keys"
+    }
+  }
+}
